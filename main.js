@@ -1,4 +1,4 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
+document.getElementById("myForm").addEventListener("submit", function(e) {
     event.preventDefault();
     let campoA = parseInt(document.getElementById("campoA").value);
     let campoB = parseInt(document.getElementById("campoB").value);
@@ -6,11 +6,11 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     if (campoB > campoA) {
     messageDiv.textContent = "Formulário válido!";
-    messageDiv.classList.remove("invalid");
-    messageDiv.classList.add("valid");
+    messageDiv.classList.remove("invalido");
+    messageDiv.classList.add("valido");
     } else {
     messageDiv.textContent = "Formulário inválido! O número em B deve ser maior que o número em A.";
-    messageDiv.classList.remove("valid");
-    messageDiv.classList.add("invalid");
+    messageDiv.classList.remove("valido");
+    messageDiv.classList.add("invalido");
     }
 });
