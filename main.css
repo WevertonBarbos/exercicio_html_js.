@@ -4,9 +4,9 @@ body {
   .message {
     margin-top: 10px;
   }
-  .valid {
+  .valido {
     color: green;
   }
-  .invalid {
+  .invalido {
     color: red;
   }
